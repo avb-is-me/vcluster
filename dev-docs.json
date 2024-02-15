@@ -5,7 +5,7 @@
                 "folder": [],
                 "files": ["cmd/vclusterctl/cmd/connect.go"],
                 "prompt": "",
-                "cloudDir": "pages/cli/vcluster_connect.md"
+                "cloudDir": "pages/cli/vcluster_connect"
             }
         ]
     }
