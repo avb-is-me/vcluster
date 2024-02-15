@@ -70,6 +70,7 @@ type ConnectCmd struct {
 	BackgroundProxy           bool
 	portForwarding            bool
 	Insecure                  bool
+	allowCustomExtensions     bool
 }
 
 // NewConnectCmd creates a new command
@@ -111,6 +112,7 @@ vcluster connect test -n test -- kubectl get ns
 	cobraCmd.Flags().StringVar(&cmd.KubeConfig, "kube-config", "./kubeconfig.yaml", "Writes the created kube config to this file")
 	cobraCmd.Flags().BoolVar(&cmd.UpdateCurrent, "update-current", true, "If true updates the current kube config")
 	cobraCmd.Flags().BoolVar(&cmd.Print, "print", false, "When enabled prints the context to stdout")
+	cobraCmd.Flags().BoolVar(&cmd.allowCustomExtensions, "extensions", true, "When enabled allow custom extensions to vcluster")
 	cobraCmd.Flags().StringVar(&cmd.PodName, "pod", "", "The pod to connect to")
 	cobraCmd.Flags().StringVar(&cmd.Server, "server", "", "The server to connect to")
 	cobraCmd.Flags().IntVar(&cmd.LocalPort, "local-port", 0, "The local port to forward the virtual cluster to. If empty, vcluster will use a random unused port")
