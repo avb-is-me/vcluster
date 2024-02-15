@@ -1,0 +1,12 @@
+{
+    "ai": {
+        "mappings": [
+            {
+                "folder": [],
+                "files": ["cmd/vclusterctl/cmd/connect.go"],
+                "prompt": "",
+                "cloudDir": "pages/cli/vcluster_connect.md"
+            }
+        ]
+    }
+}
