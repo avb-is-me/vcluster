@@ -1,5 +1,6 @@
 {
     "ai": {
+        "documentationSubject": "This code is directly tied to the functions of a command line tool.",
         "mappings": [
             {
                 "folder": [],
