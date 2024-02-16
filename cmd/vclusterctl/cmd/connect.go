@@ -107,13 +107,13 @@ vcluster connect test -n test -- kubectl get ns
 			return cmd.Run(cobraCmd.Context(), args)
 		},
 	}
-	//adds more ok
+	
 
 	cobraCmd.Flags().StringVar(&cmd.KubeConfigContextName, "kube-config-context-name", "", "If set, will override the context name of the generated virtual cluster kube config with this name")
 	cobraCmd.Flags().StringVar(&cmd.KubeConfig, "kube-config", "./kubeconfig.yaml", "Writes the created kube config to this file")
 	cobraCmd.Flags().BoolVar(&cmd.UpdateCurrent, "update-current", true, "If true updates the current kube config")
 	cobraCmd.Flags().BoolVar(&cmd.Print, "print", false, "When enabled prints the context to stdout")
-	cobraCmd.Flags().BoolVar(&cmd.allowCustomExtensions, "extensions", true, "When enabled allow custom extensions to vcluster, and it is super cool")
+	cobraCmd.Flags().BoolVar(&cmd.allowCustomExtensions, "extensions", true, "When enabled allow custom extensions to use with vcluster... and it is super cool")
 	cobraCmd.Flags().StringVar(&cmd.PodName, "pod", "", "The pod to connect to")
 	cobraCmd.Flags().StringVar(&cmd.Server, "server", "", "The server to connect to")
 	cobraCmd.Flags().IntVar(&cmd.LocalPort, "local-port", 0, "The local port to forward the virtual cluster to. If empty, vcluster will use a random unused port")
