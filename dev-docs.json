@@ -1,6 +1,10 @@
 {
     "ai": {
         "documentationSubject": "This code is directly tied to the functions of a command line tool.",
+        "checker_instructions": [
+            {"prompt": "look at the code and documentation line by line."},
+            {"prompt": "Explain why the documentation needs to chage, and make sure you are not making things up"}
+        ],
         "mappings": [
             {
                 "folder": [],
