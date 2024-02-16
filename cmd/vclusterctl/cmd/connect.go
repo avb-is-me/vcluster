@@ -107,7 +107,7 @@ vcluster connect test -n test -- kubectl get ns
 			return cmd.Run(cobraCmd.Context(), args)
 		},
 	}
-	//adds more
+	//adds more ok
 
 	cobraCmd.Flags().StringVar(&cmd.KubeConfigContextName, "kube-config-context-name", "", "If set, will override the context name of the generated virtual cluster kube config with this name")
 	cobraCmd.Flags().StringVar(&cmd.KubeConfig, "kube-config", "./kubeconfig.yaml", "Writes the created kube config to this file")
